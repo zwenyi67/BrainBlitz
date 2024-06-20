@@ -1,0 +1,337 @@
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+.welcome {
+  font-size: 33px; /* Adjust the font size as needed */
+  font-weight: bold; /* Adjust the font weight as needed */
+  font-family: Arial, sans-serif; /* Adjust the font family as needed */
+  background: linear-gradient(45deg, 
+                              #f09433 0%, 
+                              #e6683c 25%, 
+                              #dc2743 50%, 
+                              #cc2366 75%, 
+                              #de4d1c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.logo {
+  font-size: 33px; 
+  font-weight: bold;
+  font-family: Arial, sans-serif; 
+  background: linear-gradient(45deg, 
+                              #f09433 0%, 
+                              #e6683c 25%, 
+                              #dc2743 50%, 
+                              #cc2366 75%, 
+                              #bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: inline-block; 
+}
+
+.btn-gradient {
+  font-size: 20px; 
+  font-weight: bold; 
+  font-family: Arial, sans-serif; 
+  padding: 14px 20px;
+  margin: 13px 0;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(45deg, 
+                              #f09433 0%, 
+                              #e6683c 25%, 
+                              #dc2743 50%, 
+                              #cc2366 75%, 
+                              #bc1888 100%);
+  color: white;
+  cursor: pointer; 
+  transition: background 0.4s ease;
+  text-decoration: none;
+  text-align: center; 
+
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(45deg, 
+                              #bc1888 0%, 
+                              #cc2366 25%, 
+                              #dc2743 50%, 
+                              #e6683c 75%, 
+                              #f09433 100%);
+                              color: white;
+
+}
+
+.btn-option {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  padding: 14px 20px;
+  margin: 13px 0;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(45deg,
+                              #8e44ad 0%,
+                              #9b59b6 25%,
+                              #a569bd 50%,
+                              #b39ddb 75%,
+                              #d2b4de 100%);
+  color: white;
+  cursor: pointer;
+  transition: background 0.4s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-correct {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  padding: 14px 20px;
+  margin: 13px 0;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(45deg,
+                              #4caf50 0%,
+                              #66bb6a 25%,
+                              #81c784 50%,
+                              #a5d6a7 75%,
+                              #c8e6c9 100%);
+  color: white;
+  cursor: pointer;
+  transition: background 0.4s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-wrong {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  padding: 14px 20px;
+  margin: 13px 0;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(45deg,
+                              #f44336 0%,
+                              #e57373 25%,
+                              #ef5350 50%,
+                              #e53935 75%,
+                              #d32f2f 100%);
+  color: white;
+  cursor: pointer;
+  transition: background 0.4s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.form-lable-col {
+  display: block;
+  margin-bottom: 3px;
+  font-weight: bold;
+  background: linear-gradient(45deg, 
+                              #f09433 0%, 
+                              #e6683c 25%, 
+                              #dc2743 50%, 
+                              #cc2366 75%, 
+                              #bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-txt{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 2px;
+  border: 2px solid #b38124; /* Default border */
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  background-color: white; /* Ensure background is white */
+  color: #dc2743;
+  font-weight: 500;
+}
+
+.input-txt:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px rgba(240, 148, 51, 0.5), 
+              0 0 0 2px rgba(236, 104, 60, 0.5), 
+              0 0 0 2px rgba(220, 39, 67, 0.5), 
+              0 0 0 4px rgba(204, 35, 102, 0.5), 
+              0 0 0  4px rgba(188, 24, 136, 0.5);
+}
+
+.btn-login {
+  font-size: 16px; 
+  font-weight: bold; 
+  font-family: Arial, sans-serif; 
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(45deg, 
+                              #f09433 0%, 
+                              #e6683c 25%, 
+                              #dc2743 50%, 
+                              #cc2366 75%, 
+                              #bc1888 100%);
+  color: white;
+  cursor: pointer; 
+  transition: background 0.4s ease;
+  text-decoration: none;
+  text-align: center; 
+
+}
+
+.btn-login:hover {
+  background: linear-gradient(45deg, 
+                              #bc1888 0%, 
+                              #cc2366 25%, 
+                              #dc2743 50%, 
+                              #e6683c 75%, 
+                              #f09433 100%);
+}
+
+.profile-img {
+  width: 200px; /* Adjust the size as needed */
+  height: 200px; /* Adjust the size as needed */
+  border-radius: 50%; /* Make the image circular */
+  border: 5px solid transparent; /* Add space for the border */
+  background: linear-gradient(45deg, 
+                              #f09433, 
+                              #e6683c, 
+                              #dc2743, 
+                              #cc2366, 
+                              #bc1888);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.profile-img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+.left-box {
+  border: 1px solid;
+}
+
+.quiz-box {
+  width: 900px;
+}
+
+.score-box {
+  width: 600px;
+}
+
+@media (max-width: 1000px) {
+
+  .quiz-box {
+    width: 750px;
+  }
+  
+  .score-box {
+    width: 440px;
+  }
+  .btn-option, .btn-wrong, .btn-correct {
+    font-size: 17px;
+  }
+  .welcome {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .quiz-box {
+    width: 700px;
+  }
+  
+  .score-box {
+    width: 400px;
+  }
+  .btn-option, .btn-wrong, .btn-correct {
+    font-size: 15px;
+  }
+  .welcome {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .quiz-box {
+    width: 500px;
+  }
+  
+  .score-box {
+    width: 270px;
+  }
+  .btn-option, .btn-wrong, .btn-correct {
+    font-size: 14px;
+  }
+  .welcome {
+    font-size: 18px;
+  }
+  .btn-gradient {
+    font-size: 18px; 
+    padding: 11px 17px;
+}
+}
+
+@media (max-width: 500px) {
+
+  .quiz-box {
+    width: 300px;
+  }
+  
+  .score-box {
+    width: 220px;
+  }
+  .btn-option, .btn-wrong, .btn-correct {
+    font-size: 12px;
+  }
+  .welcome {
+    font-size: 16px;
+  }
+  .btn-gradient {
+    font-size: 15px; 
+    padding: 9px 15px;
+}
+}
+
+
+
+
+
